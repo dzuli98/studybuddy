@@ -1,0 +1,2 @@
+1. Prettier
+2. Auto Rename Tag

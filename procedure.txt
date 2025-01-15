@@ -1,0 +1,28 @@
+1. activate virtual env
+2. install django
+3. django-admin startproject studybud
+4. python manage.py startapp name
+5. main project -> settings -> add new app to INSTALLED APPS
+6. add urls.py to app and include it to main.urls
+7. add templates folder to root project folder and add templates
+8. add templates to settings
+9. template inheritance -> if there is a common thing present in various templates you can add a template to other templates (navbar)
+10. it is a good idea to have a template (main.py) in which all configs are set and then just to extend that template in every other
+11. place templates specific to an app inside app_name/templates/app_name and in views 'app_name/template_name'
+12. in templates refer to urls by their name -> "{% url 'room' room.id %}"
+13. for setting up database -> models.py -> creating classes which represent tables inside database
+14. python manage.py makemigrations -> creates list of sql commands for updating database with new info
+15. python manage.py migrate -> executes those commands
+16. as third party tool is not used for working with database django admin panel is used
+17. create admin used first python manage.py createsuperuser (julija/julija)(tim/P@ssw0rdJF)
+18. if you want to see database stuff in admin panel -> admin.py and register model
+19. add data to database and use it in the code
+20. how to make queries to database:
+queryset = ModelName(model_name).objects(model objects attribute, model manager).all(method)
+21. figma -> design the page
+22. CRUD, first crete room_form.html for creating and updating the room
+if action is not specified it will send it to the url that we are currently at
+23. here function based view will be used, for understanding -> check class based view as ell
+24. in django user login -> session based -> django.contrib.sessions'
+25. for restricting the pages which are shown to user check also mixins and class based view
+26. check many to many relationships

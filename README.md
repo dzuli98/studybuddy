@@ -1,1 +1,1 @@
-# studybuddy
+# django-projects
